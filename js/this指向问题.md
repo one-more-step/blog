@@ -1,15 +1,15 @@
 # this的指向
-js中this的指向，在不同的情况下，是不一样的，总是让人迷惑。
+js中this的指向，在不同的情况下，是不一样的，总是让人迷惑。
 我们可以归类如下：
 ### 暴露在全局的this
-在浏览器环境中`this` -> `window`对象; 在node中，`this`->`global`对象;
+在浏览器环境中`this` -> `window`对象; 在node中，`this`->`global`对象;
 > 以下皆以`全局对象`表述
 ### 普通函数调用
 ```js
 function foo() {
     console.log(this);
 }
-
+
 foo(); // 全局对象
 ```
 ### 做为对象的方法调用
