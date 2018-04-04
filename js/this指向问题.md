@@ -25,7 +25,7 @@ var obj = {
 obj.method(); // 这里this指向obj
 console.log(obj.me); // 这里me指向全局对象
 ```
-但是，obj.method被复制给一个变量，再去调用，`this`指向会改变：
+但是，obj.method被复制给一个变量，再去调用，`this`指向会改变：
 ```js
 var objMethod = obj.method;
 
