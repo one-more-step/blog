@@ -120,4 +120,15 @@ const obj = {
     f.call({id: 1})()() // ?
     f().call({id: 2})() // ?
     f()().call({id: 3}) // ?
+    
+3.  var user = {
+        name: 'dk',
+        methond: function() {
+            console.log(this.name);	
+        }
+    };
+    function foo(fn) {
+        fn();
+    }
+    foo(user.methond); // ?
 ```
